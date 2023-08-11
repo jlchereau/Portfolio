@@ -47,7 +47,7 @@ With the under-sampled dataset, Bayesian optimisation converges with little prog
 
 ![Undersampled](undersampled.png)
 
-With the over-sampled dataset, Bayesian optimisation does not seem to converge but the accuracy score progresses from 37% to 65%. The best configuration is:
+With the over-sampled dataset, Bayesian optimisation does not seem to converge but the accuracy score progresses from 37% to 65%. The optimal configuration is:
 - activation: 'tanh',
 - alpha: 0.31622776601683794,
 - hidden_layer_sizes: (105, 86),
@@ -57,3 +57,10 @@ With the over-sampled dataset, Bayesian optimisation does not seem to converge b
 ![Oversampled](oversampled.png)
 
 65% is not great. This proves there is not enough correlation between the features (key financial metrics) and the labels (Zacks ranks) to make a classifier that replicates Zacks rankings. Goind forward, other features might be needed, especially to reflect the progression in stock price time series and financial history (growth, dividends). Nevertheless this was a comprehensive and interesting learning experience, as it demonstrates the difficulty to select a relevant set of features to build a machine learning model.
+
+Note: there are a certain number of warnings suggesting to increase max_iter=1000 in the MLPClassifier parameters. With a value of 2000, Bayesian optimisation takes 1 hour but reaches a score of 77.4%. There are still a number of such warnings though. The recommended optimal configuration becomes:
+- activation: 'tanh',
+- alpha: 0.31622776601683794,
+- hidden_layer_sizes: (93, 105),
+- learning_rate: 'adaptive',
+- solver: 'lbfgs'
