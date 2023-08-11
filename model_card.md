@@ -37,7 +37,7 @@ More informatin on these labels at https://advisortools.zacks.com/Content/ZAT_Za
 
 ### Model Architecture
 
-The project tests several classifiers and optimizes a neural network called MLPClassifier. See `model.ipynb``.
+The project tests several classifiers and optimizes a neural network called MLPClassifier. See `model.ipynb`.
 The result of the optmisation process is an MLPClassifier with the following parameters:
 - activation: 'tanh',
 - alpha: 0.31622776601683794,
@@ -47,10 +47,10 @@ The result of the optmisation process is an MLPClassifier with the following par
 
 ## Performance
 
-The model as an accuracy score of approximately 65% on a balanced dataset of approximately 5 classes * 1,500 records oversampled with the SMITE algorithm from an imbalanced dataset of approximately 2500 stocks with Zacks ranks saved as `./data/data.csv`.
+The model has an accuracy score of approximately 65% on a balanced dataset of approximately 5 classes * 1,500 records oversampled with the SMITE algorithm from an imbalanced dataset of approximately 2500 stocks with Zacks ranks saved as `./data/data.csv`.
 
 ## Limitations and Trade-offs
 
 The main Trade-off was time limitation for this proof of concept which had to be completed in approximately 30 hours.
 
-The model does not perform sufficiently well to be considered in production. More work should be done on feature selection. More real data is needed to train the model.
+The model does not perform sufficiently well to be considered in production. More work should be done on feature selection and processing. More real data is needed to effectively train the model.

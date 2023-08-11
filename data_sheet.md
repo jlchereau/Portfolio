@@ -1,8 +1,8 @@
-# Datasheet Template
+# Datasheet
 
 ## Motivation
 
-- The dataset was created to train a classifier to replicate the Zacks rank from key financial metrics. 
+- The dataset was created to train a classifier to replicate Zacks ranks from key financial metrics. 
 - The dataset was created by Jacques L. Chereau in August 2023 for the final project of the Imperial College Professional Certificate in Machine Learning and Artificial Intelligence.
  
 ## Composition
@@ -10,7 +10,7 @@
 - `./data/all_tickers.txt` is a list of US stock tickers sourced from https://github.com/rreichel3/US-Stock-Symbols
 - `./data/features.csv` contains key financial metrics available on Yahoo Finance for these stock tickers (some are missing)
 - `./data/labels.csv` contains Zacks ranks available on Zacks.com for these stock tickers (some are missing)
-- `./data/data.csv` is a cleaned dataset where eache feature is converted to a Z-score by industry
+- `./data/data.csv` is a cleaned dataset where each feature is converted to a Z-score by industry
 
 This data is public and therefore not confidential.
 
@@ -33,8 +33,8 @@ This data is public and therefore not confidential.
 
 ## Distribution
 
-- The dataset has only been posted on emeritus.insendi.com for grading by Imperial College
-- Zacks ranks are public but proprietary information from Zacks.com
+- The dataset has only been posted on emeritus.insendi.com for grading by Imperial College. The GitHub public repository will be deleted once graded.
+- Zacks ranks are public but proprietary information from Zacks.com.
 
 ## Maintenance
 
